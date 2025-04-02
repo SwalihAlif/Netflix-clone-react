@@ -9,6 +9,7 @@ import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
+  
   return (
     <div className='home'>
       <Navbar />
