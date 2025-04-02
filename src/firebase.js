@@ -12,12 +12,16 @@ import {
     collection, 
     getFirestore} from "firebase/firestore"
 import { toast } from "react-toastify";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+console.log("Firebase API Key:", import.meta.env.VITE_FIREBASE_API_KEY);
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBjMZnSq-8SqQAbtDsbKfxcj7_Syx98I8E",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "netflix-clone-react-7d82e.firebaseapp.com",
   projectId: "netflix-clone-react-7d82e",
   storageBucket: "netflix-clone-react-7d82e.firebasestorage.app",
